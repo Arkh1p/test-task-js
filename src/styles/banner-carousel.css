@@ -2,8 +2,17 @@
   position: relative;
   z-index: 1;
   display: flex;
-  flex-direction: column;
-  gap: 24px;
+  transition: transform .5s ease-in-out;
+}
+
+.carousel__wrapper {
+  overflow: hidden;
+
+  border-radius: 8px;
+}
+
+.carousel__item {
+  flex-shrink: 0;
 }
 
 #carousel-wrapper {

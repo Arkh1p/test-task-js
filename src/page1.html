@@ -32,53 +32,54 @@
     </div>
     
     <div id="carousel-wrapper" class="content" data-tab-content="2">
-      <div class="carousel">
-        <div class="furniture-banner banner">
-          <p class="furniture-banner__heading">Сборка включена в стоимость</p>
-          <p class="furniture-banner__description">
-            <span class="furniture-banner__text">Соберите сами и получите скидку 10%: выберите «Нет» и укажите</span>
-            <span class="furniture-banner__promocode tooltip-container">
-              <svg class="furniture-banner__promocode-icon">
-                <use xlink:href="./icons/sprite.svg#furniture-icon"></use>
-              </svg>
-              <span class="furniture-banner__promocode-text" id="tooltip-anchor">СОБЕРУСАМ</span>
-
-              <span class="furniture-banner__promocode-tooltip tooltip" id="tooltip" data-position="top">Скопировать</span>
-            </span>
-            <span class="furniture-banner__text">в поле комментария на следующем шаге оформления заказа</span>
-          </p>
-        </div>
-        <div class="shock-price-banner banner">
-          <a class="banner-link" href="page2.html">
-            <div class="shock-price-banner__wrapper">
-              <div class="shock-price-banner__heading">
-                <p class="shock-price-banner__title">Цена недели</p>
-                <p class="shock-price-banner__text">успей купить выгодно</p>
-              </div>
-              <div class="timer">
-                <p class="timer__title">До окончания акции</p>
-                <div class="timer-digits">
-                  <div class="timer-digits__days timer-digits-data">
-                    <span>00</span><span>дней</span>
+      <div class="carousel__wrapper">
+        <div class="carousel">
+          <div class="furniture-banner banner carousel__item">
+            <p class="furniture-banner__heading">Сборка включена в стоимость</p>
+            <p class="furniture-banner__description">
+              <span class="furniture-banner__text">Соберите сами и получите скидку 10%: выберите «Нет» и укажите</span>
+              <span class="furniture-banner__promocode tooltip-container" id="tooltip-anchor">
+                <svg class="furniture-banner__promocode-icon">
+                  <use xlink:href="./icons/sprite.svg#furniture-icon"></use>
+                </svg>
+                <span class="furniture-banner__promocode-text">СОБЕРУСАМ</span>
+                <span class="furniture-banner__promocode-tooltip tooltip hidden" id="tooltip">Скопировать</span>
+              </span>
+              <span class="furniture-banner__text">в поле комментария на следующем шаге оформления заказа</span>
+            </p>
+          </div>
+          <div class="shock-price-banner banner carousel__item">
+            <a class="banner-link" href="page2.html">
+              <div class="shock-price-banner__wrapper">
+                <div class="shock-price-banner__heading">
+                  <p class="shock-price-banner__title">Цена недели</p>
+                  <p class="shock-price-banner__text">успей купить выгодно</p>
+                </div>
+                <div class="timer">
+                  <p class="timer__title">До окончания акции</p>
+                  <div class="timer-digits">
+                    <div class="timer-digits__days timer-digits-data">
+                      <span>00</span><span>дней</span>
+                    </div>
+                    <div class="timer-digits__hours timer-digits-data"><span>00</span><span>часов</span></div>
+                    <div class="timer-digits__minutes timer-digits-data"><span>00</span><span>минут</span></div>
                   </div>
-                  <div class="timer-digits__hours timer-digits-data"><span>00</span><span>часов</span></div>
-                  <div class="timer-digits__minutes timer-digits-data"><span>00</span><span>минут</span></div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="controls">
-        <div class="control control--prev">
-          <svg class="control__icon">
-            <use xlink:href="./icons/sprite.svg#control-prev-icon"></use>
-          </svg>
-        </div>
-        <div class="control control--next">
-          <svg class="control__icon">
-            <use xlink:href="./icons/sprite.svg#control-next-icon"></use>
-          </svg>
+        <div class="controls">
+          <div class="control control--prev">
+            <svg class="control__icon">
+              <use xlink:href="./icons/sprite.svg#control-prev-icon"></use>
+            </svg>
+          </div>
+          <div class="control control--next">
+            <svg class="control__icon">
+              <use xlink:href="./icons/sprite.svg#control-next-icon"></use>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
