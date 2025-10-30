@@ -10,36 +10,40 @@
   <link rel="stylesheet" href="./styles/komus-link-list.css">
   <link rel="stylesheet" href="./styles/banner-carousel.css">
   <link rel="stylesheet" href="./styles/timer.css">
+  <link rel="stylesheet" href="./styles/tooltip.css">
   <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
 
   <main>
-
     <h1 class="main-title">Тестовое задание</h1>
     <div class="tabs">
       <ul class="tabs__list">
-        <li id="tab1" class="tabs__item tabs__item--active">Таб 1</li>
-        <li id="tab2" class="tabs__item">Таб 2</li>
+        <li id="tab1" class="tabs__item tabs__item--active" data-tab="1">Таб 1</li>
+        <li id="tab2" class="tabs__item" data-tab="2">Таб 2</li>
       </ul>
     </div>
-    <div id="list-wrapper" class="content">
+
+    <div id="list-wrapper" class="content content--active" data-tab-content="1">
       <ul class="komus-links__list">
         <!-- сюда будут добавлены ссылки -->
       </ul>
     </div>
-    <div id="carousel-wrapper" class="content">
+    
+    <div id="carousel-wrapper" class="content" data-tab-content="2">
       <div class="carousel">
         <div class="furniture-banner banner">
           <p class="furniture-banner__heading">Сборка включена в стоимость</p>
           <p class="furniture-banner__description">
             <span class="furniture-banner__text">Соберите сами и получите скидку 10%: выберите «Нет» и укажите</span>
-            <span class="furniture-banner__promocode">
+            <span class="furniture-banner__promocode tooltip-container">
               <svg class="furniture-banner__promocode-icon">
                 <use xlink:href="./icons/sprite.svg#furniture-icon"></use>
               </svg>
-              <span class="furniture-banner__promocode-text">СОБЕРУСАМ</span>
+              <span class="furniture-banner__promocode-text" id="tooltip-anchor">СОБЕРУСАМ</span>
+
+              <span class="furniture-banner__promocode-tooltip tooltip" id="tooltip" data-position="top">Скопировать</span>
             </span>
             <span class="furniture-banner__text">в поле комментария на следующем шаге оформления заказа</span>
           </p>
@@ -87,7 +91,7 @@
   </template>
 
   <script src="./linksData.js"></script>
-  <script src="./main.js"></script>
+  <script type="module" src="./main.js"></script>
 
 </body>
 

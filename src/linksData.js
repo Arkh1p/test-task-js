@@ -18,3 +18,17 @@ const linksData = [
     title: 'Новости Комус',
   },
 ];
+  const list = document.querySelector('.komus-links__list');
+  const template = document.querySelector('#komus-links-item-template');
+
+  linksData.forEach(element => {
+    const item = template.content.cloneNode(true);
+    const linkItem = item.querySelector('.komus-links__link');
+
+    linkItem.href = element.link;
+    linkItem.textContent = element.title;
+  
+    list.append(item);
+  });
+
+

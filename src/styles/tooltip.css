@@ -1,0 +1,46 @@
+.tooltip-container {
+    position: relative;
+}
+
+.tooltip {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    position: absolute;
+
+    width: max-content;
+    max-width: 300px;
+    padding:  12px;
+
+    text-align: center;
+    text-transform: initial;
+
+    color: #f9f9f9;
+    opacity: 0.9;
+    border-radius: 4px;
+    background: #363a47;
+}
+
+.tooltip::after {
+    position: absolute;
+
+    content: "";
+
+    border: 7px solid transparent;
+}
+
+.tooltip[data-position="top"] {
+    bottom: calc(100% + 8px);
+    left: 50%;
+
+    translate: -50% 0;
+}
+
+.tooltip[data-position=top]::after {
+  bottom: -13px;
+  left: 50%;
+  translate: -50% 0;
+  border-top-color: #363a47;
+}
