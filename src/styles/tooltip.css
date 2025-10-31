@@ -14,7 +14,7 @@
     line-height: 18px;
 
     position: absolute;
-    bottom: calc(100% + 8px);
+    bottom: calc(100% + 4px);
     left: 50%;
 
     width: max-content;
@@ -31,6 +31,8 @@
     opacity: 0.9;
     border-radius: 4px;
     background: #363a47;
+    box-shadow: 0 4px 8px 0 rgba(96, 97, 112, 0.16), 0 0 2px 0 rgba(40, 41, 61, 0.04);
+
 }
 
 .tooltip::after {
@@ -60,5 +62,16 @@
 
 .tooltip.clicked::before {
     font-size: 14px;
+    line-height: 18px;
+
+    display: inline-block;
+
+    padding-left: 28px;
+
     content: "Скопировано";
+
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 4.5C7.85786 4.5 4.5 7.85786 4.5 12C4.5 16.1421 7.85786 19.5 12 19.5C16.1421 19.5 19.5 16.1421 19.5 12C19.5 7.85786 16.1421 4.5 12 4.5ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z' fill='%2327AE60' /%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.7803 8.78026C18.0732 9.07315 18.0732 9.54803 17.7803 9.84092L11.5607 16.0606C10.9749 16.6464 10.0251 16.6464 9.43934 16.0606L6.21967 12.8409C5.92678 12.548 5.92678 12.0732 6.21967 11.7803C6.51256 11.4874 6.98744 11.4874 7.28033 11.7803L10.5 14.9999L16.7197 8.78026C17.0126 8.48737 17.4874 8.48737 17.7803 8.78026Z' fill='%2327AE60' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 24px;
 }

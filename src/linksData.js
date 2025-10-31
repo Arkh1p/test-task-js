@@ -19,7 +19,7 @@ const linksData = [
   },
 ];
   const list = document.querySelector('.komus-links__list');
-  const template = document.querySelector('#komus-links-item-template');
+  const template = document.getElementById('komus-links-item-template');
 
   linksData.forEach(element => {
     const item = template.content.cloneNode(true);

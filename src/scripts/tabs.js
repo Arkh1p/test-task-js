@@ -1,6 +1,7 @@
 export function tabs() {
-    const tabItems = document.querySelectorAll(".tabs__item");
-    const tabContents = document.querySelectorAll(".content");
+    const tabs = document.querySelector(".tabs");
+    const tabItems = tabs.querySelectorAll(".tabs__item");
+    const tabContents = tabs.querySelectorAll(".content");
 
     for (let i = 0; i < tabItems.length; i++) {
         tabItems[i].addEventListener("click", function (e) {

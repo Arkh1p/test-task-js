@@ -1,8 +1,9 @@
 export function slider() {
-    const carousel = document.querySelector(".carousel");
-    const carouselItem = document.querySelectorAll(".carousel__item");
-    const prevBtn = document.querySelector(".control--prev");
-    const nextBtn = document.querySelector(".control--next");
+    const carouselWrapper = document.getElementById("carousel-wrapper")
+    const carousel = carouselWrapper.querySelector(".carousel");
+    const carouselItem = carouselWrapper.querySelectorAll(".carousel__item");
+    const prevBtn = carouselWrapper.querySelector(".control--prev");
+    const nextBtn = carouselWrapper.querySelector(".control--next");
 
     let currentIndex = 0;
     const totalItems = carouselItem.length;

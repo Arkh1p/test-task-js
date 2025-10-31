@@ -1,6 +1,6 @@
 export function tooltip() {
-    const tooltip = document.querySelector("#tooltip");
-    const tooltipAnchor = document.querySelector("#tooltip-anchor");
+    const tooltip = document.getElementById("tooltip");
+    const tooltipAnchor = document.getElementById("tooltip-anchor");
     const promocodeText = document.querySelector(".furniture-banner__promocode-text").textContent;
 
     const showTooltip = () => {
