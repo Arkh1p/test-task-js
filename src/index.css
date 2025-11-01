@@ -18,10 +18,24 @@ body {
 }
 
 .content {
-  padding: 16px;
+  height: 0;
+
+  visibility: hidden;
+
+  transition: opacity .2s ease;
+
+  opacity: 0;
   background-color: #f1f3f9;
   border-radius: 8px;
+}
+
+.content.content--active {
+  height: initial;
   margin-bottom: 24px;
+  padding: 16px;
+
+  opacity: 1;
+  visibility: visible;
 }
 
 .furniture-banner {
